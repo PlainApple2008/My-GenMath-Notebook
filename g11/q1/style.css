@@ -5,13 +5,12 @@
     --color4: rgb(66,66,66);
     --color5: rgb(230, 230, 230);
     
+    /* Variables listed here for ease of modification and consistency cases*/
     --color-table: rgb(217,221,181);
     --color-link-text: rgb(66,66,66);
     --color-maincontent-background: blanchedAlmond;
     --color-background: rgb(255,239,239);
     --color-nav-background: rgb(167,110,110);
-    
-    /*--color-text: rgb(230, 230, 230);*/
     --color-link-text: rgb(66,66,66);
     --color-link-a: rgb(217,221,181);
     --color-link-b: #DACFAB;
@@ -20,6 +19,7 @@
     --color-nav-background: rgb(167,110,110);
     --color-solutionformat-p: lightYellow;
     --margin-maincontent: 3em;
+    --margin-top-heading: 2em;
     
     --indent-p: 1em;
     --indent-indentall: 2em;
@@ -48,6 +48,7 @@ div.nav {
     left: 0px;
 }
 
+/* Have alternating link colors */
 div.nav > a:nth-child(even) {
     background-color: var(--color-link-a);
 }
@@ -104,6 +105,15 @@ p.indentall {
     margin-left: calc(var(--margin-maincontent) + var(--indent-indentall));
 }
 
+p.important-thought {
+    background-color: lightCoral;/*salmon; */
+    color: white; 
+    text-shadow: 1px 1px black; 
+    padding: 1em;
+    padding-top: 0.5em;
+    /*padding-top: 0.8em;*/
+}
+
 /* autoize the margin */
 /*p.centercontent {
     margin-left: auto;
@@ -112,6 +122,10 @@ p.indentall {
 
 h1, h2 {
     text-align: center;
+}
+
+h2 {
+    margin-top: var(--margin-top-heading);
 }
 
 div.center {
@@ -158,6 +172,20 @@ tr:last-child>td {
     border-bottom: none;
 }
 
+li {
+    font-size: 1.2em;
+}
+
+div.listcontainer {
+    text-align: center;
+}
+
+div.listcontainer > ul, 
+div.listcontainer > ol {
+    display: inline-block;
+    text-align: left;
+}
+
 /*table.solutionformat {*/
     /*margin: auto;
     margin-top: 2em;
@@ -191,17 +219,3 @@ table.solutionformat > tr > td:nth-child(1) {
 /*table.solutionformat td {
     border: none;
 }*/
-
-li {
-    font-size: 1.2em;
-}
-
-div.listcontainer {
-    text-align: center;
-}
-
-div.listcontainer > ul, 
-div.listcontainer > ol {
-    display: inline-block;
-    text-align: left;
-}
