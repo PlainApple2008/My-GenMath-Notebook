@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <title>My GenMath Notebook</title>
+</head>
+
+<body>
+<div class="nav">
+    <a href="page1.html">Lesson 1</a>
+</div>
+<div class="maincontent">
+    <h1>Composition of Functions</h1>
+    <p>
+       The output of one function is the input of another.
+    </p>
+    <p>
+        expressed as:
+    </p>
+    <p align="center">
+        (f &#x2218 g) = f(g(x))
+    </p>
+    <p>
+        read as:
+    </p>
+    <p align="center">
+        "f of g of x" or "f composition of g of x"
+    </p>
+    <div class="center">
+        <img class="block" src="images/composition_of_functions.webp" />
+        <figcaption>
+                A better representation
+        </figcaption>
+    </div>
+    <p>
+        Example:
+    </p>
+    <p class="noindent">
+        1. f(x) = 3x + 1<br>
+        &nbsp&nbsp&nbsp g(x) = 2x + 1
+    </p>
+    <p class="solutionformat">
+        (f &#x2218 g) = f(g(x))<br>
+        = 3(2x + 1) + 1<br>
+        = 6x + 3 + 1<br>
+        = 6x + 4
+    </p>
+    <p class="solutionformat">
+        (g &#x2218 f) = g(f(x))<br>
+        = 2(3x + 1) + 1<br>
+        = 6x + 2 + 1<br>
+        = 6x + 3
+    </p>
+    <p class="solutionformat">
+        (f &#x2218 f) = f(f(x))<br>
+        = 3(3x + 1) + 1<br>
+        = 9x + 3 + 1<br>
+        = 9x + 4
+    </p>
+    <p class="noindent">
+        2. f(x) = x<sup>2</sup> + 4x + 4<br>
+        &nbsp&nbsp&nbsp g(x) = x + 1
+    </p>
+    <p align="center">
+        (f &#x2218 g)(x) = f(g(x))<br>
+        = (x + 1)<sup>2</sup> + 4(x + 1) + 4<br>
+        = (x + 1)(x + 1) + 4(x + 1) + 4<br>
+        = (x<sup>2</sup> + 2x + 1) + (4x + 4) + 4<br>
+        = x<sup>2</sup> + 6x + 9
+    </p>
+</div>
+</body>
+
+</html>

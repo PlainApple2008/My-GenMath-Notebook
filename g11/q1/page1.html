@@ -5,45 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My GenMath Notebook</title>
-    <style>
-        body {
-            padding: 25%;
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-        
-        p {
-            text-indent: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+<div class="nav flexor">
+    <a href="page1.html">Lesson 1
+    <!--<div class="linkconte">
+        Functions and Relations
+    </div>-->
+    </a>
+    
+    <!--<a href="page1.html">Lesson 1</a>-->
+</div>
+<div class="maincontent">
     <h1>Relations and Functions</h1>
     <p>
         <u>Relation</u> is a relationship between two quantities.
     </p>
     <p>
-        Classification of Relations
-        <ul>
-            <li>one-to-one</li>
-            <li>one-to-many</li>
-            <li>many-to-one</li>
-            <li>many-to-many</li>
-        </ul>
+        Classification of Relations:
+        <div class="listcontainer">
+            <ul>
+                <li>one-to-one</li>
+                <li>one-to-many</li>
+                <li>many-to-one</li>
+                <li>many-to-many</li>
+            </ul>
+        </div>
     </p>
     <p>
-        <u>Function</u> is a special type of function in which the domain x corresponds to <strong>exactly one</strong> value of the range y.
+        <u>Function</u> is a special type of function in which the
+        domain x corresponds to <strong>exactly one</strong> value 
+        of the range y.
     </p>
     <p>
         Representation:
-        <ul>
-            <li>Ordered Pair</li>
-            <li>Table of Valuyes</li>
-            <li>Diagram</li>
-            <li>Equation</li>
-            <li>Graph</li>
-        </ul>
+        <div class="listcontainer">
+            <ul>
+                <li>Ordered Pair</li>
+                <li>Table of Values</li>
+                <li>Diagram</li>
+                <li>Equation</li>
+                <li>Graph</li>
+            </ul>
+        </div>
     </p>
     <table>
         <tr>
@@ -80,10 +86,17 @@
     </p>
     <p>
         <u>Horizontal Line Test</u> is used whether
-        function is one-to-one. Same conditions as 
+        function <u>is one-to-one</u>. Same conditions as 
         Vertical Line Test but horizontally.
     </p>
-    <img width="50%" height="50%" src="images/pic_linetest_graph.jpg" />
+    
+    <div class="center">
+        <img class="block" src="images/pic_linetest_graph.jpg" />
+        <figcaption>
+            Applying line tests on graphs
+        </figcaption>
+    </div>
+</div>
 </body>
 
 </html>
